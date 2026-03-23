@@ -61,10 +61,7 @@ class Bill:
         return f"Total bill for {self.nights} night(s) at {self.hotel.name}: ${total:.2f}"
 
 
-# Main flow
-print(df)
-hotel_ID = input("Enter the id of the hotel: ")
-hotel = Hotel(hotel_ID)
+
 
 if hotel.available():
     credit_card = CreditCard(number='1234')
